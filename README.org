@@ -37,6 +37,7 @@ With agent-shell, you can interact with any ACP-driven agent like:
 - [[https://github.com/svkozak/pi-acp][Pi]]
 - [[https://github.com/can1357/oh-my-pi][Oh My Pi]]
 - [[https://opencode.ai][Opencode]]
+- [[https://openclaw.ai][OpenClaw]]
 
 [[https://www.youtube.com/watch?v=R2Ucr3amgGg][agent-shell - YouTube]]
 
@@ -252,6 +253,16 @@ bun install -g @oh-my-pi/pi-coding-agent
 #+end_src
 
 See https://github.com/can1357/oh-my-pi for details.
+
+*** OpenClaw
+
+For OpenClaw, install with:
+
+#+begin_src bash
+curl -fsSL https://openclaw.ai/install.sh | bash
+#+end_src
+
+See https://docs.openclaw.ai/start/getting-started for details.
 
 *** Opencode + local ollama models
 
@@ -959,6 +970,9 @@ always go to Evil modes if you need to with ~C-z~).
 | agent-shell-openai-codex-environment          | Environment variables for the OpenAI Codex client.                              |
 | agent-shell-openai-default-model-id           | Default Codex model ID.                                                         |
 | agent-shell-openai-default-session-mode-id    | Default Codex session mode ID.                                                  |
+| agent-shell-openclaw-acp-command              | Command and parameters for the OpenClaw ACP bridge.                             |
+| agent-shell-openclaw-default-model-id         | Default OpenClaw model ID.                                                      |
+| agent-shell-openclaw-environment              | Environment variables for the OpenClaw client.                                  |
 | agent-shell-opencode-acp-command              | Command and parameters for the OpenCode client.                                 |
 | agent-shell-opencode-authentication           | Configuration for OpenCode authentication.                                      |
 | agent-shell-opencode-default-model-id         | Default OpenCode model ID.                                                      |
@@ -1061,6 +1075,7 @@ always go to Evil modes if you need to with ~C-z~).
 |                 | agent-shell-next-permission-button                      | Jump to the next button.                                                      |
 |                 | agent-shell-open-transcript                             | Open the transcript file for the current `agent-shell' buffer.                |
 |                 | agent-shell-openai-start-codex                          | Start an interactive Codex agent shell.                                       |
+|                 | agent-shell-openclaw-start-agent                        | Start an interactive OpenClaw agent shell.                                    |
 |                 | agent-shell-opencode-start-agent                        | Start an interactive OpenCode agent shell.                                    |
 | C-c C-o         | agent-shell-other-buffer                                | Switch to other associated buffer (viewport vs shell).                        |
 | C-<up> or M-p   | agent-shell-previous-input                              | Cycle backwards through input history, saving input.                          |
